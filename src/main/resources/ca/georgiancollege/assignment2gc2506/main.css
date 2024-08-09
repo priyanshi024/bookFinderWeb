@@ -1,0 +1,59 @@
+/* main.css */
+
+/* Style for the root VBox */
+.root {
+    -fx-padding: 10;
+    -fx-spacing: 10;
+    -fx-alignment: center;
+}
+
+/* Style for the TextField */
+.text-field {
+    -fx-font-size: 14px;
+    -fx-padding: 5;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5;
+    -fx-background-color: #f9f9f9;
+}
+
+/* Style for the Button */
+.button {
+    -fx-font-size: 14px;
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+    -fx-padding: 10 20;
+    -fx-border-radius: 5;
+}
+
+/* Style for the ListView */
+.list-view {
+    -fx-pref-width: 200px;
+    -fx-pref-height: 300px;
+}
+
+/* Style for the VBox containing details */
+.details-pane {
+    -fx-padding: 10;
+    -fx-spacing: 10;
+    -fx-background-color: #f1f1f1;
+    -fx-border-color: #ddd;
+    -fx-border-radius: 5;
+}
+
+/* Style for Labels */
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+}
+
+/* Style for ImageView */
+.image-view {
+    -fx-fit-width: 200px;
+    -fx-fit-height: 300px;
+    -fx-preserve-ratio: true;
+}
+
+/* Style for the SplitPane */
+.split-pane {
+    -fx-padding: 10;
+}
