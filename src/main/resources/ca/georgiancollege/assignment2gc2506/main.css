@@ -1,108 +1,65 @@
-/* main.css */
-
-/* Root style to apply a custom background color */
+/* General styling for the application */
 .root {
     -fx-background-color: #d4f7d4; /* Light green background */
-    -fx-padding: 20;
-    -fx-spacing: 15;
-    -fx-alignment: center;
     -fx-font-family: "Segoe UI", sans-serif;
+    -fx-padding: 10px;
 }
 
-/* Style for TextField with rounded corners and shadow */
-.text-field {
-    -fx-font-size: 16px;
-    -fx-padding: 10;
-    -fx-background-radius: 10;
-    -fx-border-radius: 10;
-    -fx-border-color: #E0E0E0;
-    -fx-background-color: #FFFFFF;
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 5, 0, 0, 1);
-}
-
-/* Style for Buttons with custom background, icons, and hover effect */
-.button {
+/* Styling for labels */
+.label {
+    -fx-text-fill: #2e7d32; /* Dark green for text */
     -fx-font-size: 14px;
-    -fx-background-color: #4CAF50;
+}
+
+/* Styling for the description label to make it fully visible */
+#descriptionLabel {
+    -fx-background-color: #a5d6a7;
+    -fx-padding: 10px;
+    -fx-border-radius: 10;
+    -fx-text-fill: #2e7d32; /* Dark green for text */
+    -fx-font-size: 14px;
+    -fx-wrap-text: true; /* Enable text wrapping */
+}
+
+/* Styling for buttons */
+.button {
+    -fx-background-color: #81c784; /* Medium green */
     -fx-text-fill: white;
-    -fx-padding: 10 20;
-    -fx-background-radius: 20;
-    -fx-border-radius: 20;
-    -fx-cursor: hand;
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 5, 0, 0, 2);
+    -fx-font-weight: bold;
+    -fx-background-radius: 15;
+    -fx-padding: 10px 20px;
 }
 
 .button:hover {
-    -fx-background-color: #45A049;
+    -fx-background-color: #66bb6a; /* Darker green on hover */
 }
 
-.button:pressed {
-    -fx-background-color: #388E3C;
+/* Styling for text fields */
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: #2e7d32; /* Dark green border */
+    -fx-border-radius: 10;
+    -fx-padding: 8px;
 }
 
-.search-button {
-    -fx-graphic: url('icons/search.png');
-    -fx-background-size: 16px 16px;
-    -fx-background-position: center left;
-    -fx-background-repeat: no-repeat;
-}
-
-/* Style for ListView with rounded corners */
+/* Styling for ListView */
 .list-view {
-    -fx-pref-width: 250px;
-    -fx-pref-height: 400px;
-    -fx-background-radius: 10;
+    -fx-background-color: white;
+    -fx-border-color: #2e7d32;
     -fx-border-radius: 10;
-    -fx-background-color: #FFFFFF;
-    -fx-border-color: #E0E0E0;
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 5, 0, 0, 2);
+    -fx-padding: 5px;
 }
 
-/* Style for the VBox containing details with rounded corners and padding */
-.details-pane {
-    -fx-padding: 15;
-    -fx-spacing: 15;
-    -fx-background-color: #FFFFFF;
-    -fx-border-radius: 10;
-    -fx-background-radius: 10;
-    -fx-border-color: #E0E0E0;
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 5, 0, 0, 2);
-}
-
-/* Style for Labels with custom font and color */
-.label {
-    -fx-font-size: 16px;
-    -fx-text-fill: #333333;
-}
-
-/* Header Labels for the details section */
-.label.header {
-    -fx-font-size: 18px;
-    -fx-text-fill: #4CAF50;
-    -fx-font-weight: bold;
-}
-
-/* Style for ImageView with rounded corners and shadow */
+/* Styling for ImageView */
 .image-view {
-    -fx-fit-width: 200px;
-    -fx-fit-height: 300px;
-    -fx-preserve-ratio: true;
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 7, 0, 0, 3);
     -fx-background-radius: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0, 0, 0);
 }
 
-/* Style for SplitPane */
-.split-pane {
-    -fx-padding: 10;
-    -fx-background-color: #FFFFFF;
+/* Styling for VBox (details pane) */
+.vbox {
+    -fx-background-color: #a5d6a7; /* Light green with a slight variation */
     -fx-background-radius: 10;
-    -fx-border-radius: 10;
-    -fx-border-color: #E0E0E0;
-}
-
-/* Global Font and Color Settings */
-* {
-    -fx-font-family: "Segoe UI", sans-serif;
-    -fx-focus-color: #4CAF50;
-    -fx-faint-focus-color: #4CAF5077;
+    -fx-padding: 15px;
+    -fx-spacing: 10px;
 }
