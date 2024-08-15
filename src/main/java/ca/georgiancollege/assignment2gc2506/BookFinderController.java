@@ -51,7 +51,7 @@ public class BookFinderController {
     @FXML
     private Label descriptionLabel;
 
-    private static final String API_KEY = "AIzaSyDSnSRhj8zxOZF1Coio4cgq_CdmC_yDZJQ";
+    private static final String API_KEY = "";
 
     @FXML
     void onSearch() {
